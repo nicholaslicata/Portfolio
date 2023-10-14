@@ -1,1 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+}
+
+html, body {
+    height: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+
+.navbar-container { 
+    min-height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 1em;
+    border: 1px solid red;
+}
+
+.nav {
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    padding: 1em 0;
+    z-index: 1;
+    transition: 0.4s ease-in;
+}
+
+.nav-active {
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: 0.4s ease-in;
+    border: 1px solid red;
+}
+
+.nav-link {
+    text-decoration: none;
+    letter-spacing: 0.4px;
+}
+
+.navbar-logo {
+    letter-spacing: 0.4px;
+}
+
+.hamburger-btn {
+    display: block;
+    z-index: 100;
+}
+
+.hamburger-btn:hover {
+    cursor: pointer;
+}
+
+.hamburger-line {
+    display: block;
+    width: 20px;
+    height: 3px;
+    margin: 3px auto;
+    border-radius: 0%;
+    background-color: black;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 768px) {
+    /* Navbar */
+    .nav {
+        width: 50%;
+        max-width: 400px;
+        position: static;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .hamburger-btn {
+        display: none;
+    }
+
+}
