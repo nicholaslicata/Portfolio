@@ -1,15 +1,16 @@
 
-function Navbar() {
+function Navbar({ navActive, toggleNav }) {
+
     return (
       <header className='navbar-container'>
           <h1 className='navbar-logo'>Nicholas Licata</h1>
-          <nav>
-            <a href='#home'>Home</a>
-            <a href='#about'>About</a>
-            <a href='#projects'>Projects</a>
-            <a href='#contact'>Contact</a>
+          <nav className={navActive ? 'nav-active' : 'nav'}>
+            <a className='nav-link' href='#home'>Home</a>
+            <a className='nav-link' href='#about'>About</a>
+            <a className='nav-link' href='#projects'>Projects</a>
+            <a className='nav-link' href='#contact'>Contact</a>
           </nav>
-          <div className='hamburger-btn'>
+          <div onClick={toggleNav} className='hamburger-btn'>
             <span className='hamburger-line'></span>
             <span className='hamburger-line'></span>
             <span className='hamburger-line'></span>
