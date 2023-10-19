@@ -11,6 +11,12 @@ function App() {
         closeNav();
       }
     })
+
+    if (navActive && window.innerWidth < 768) {
+      document.body.style.overflowY = 'hidden';
+    } else if (!navActive) {
+      document.body.style.overflowY = 'visible';
+    }
   })
 
   function toggleNav() {
