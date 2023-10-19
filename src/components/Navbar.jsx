@@ -3,7 +3,7 @@ function Navbar({ navActive, toggleNav }) {
 
     return (
       <header className='navbar-container'>
-          <h1 className='navbar-logo'>Nicholas Licata</h1>
+          <a href='#home' className='navbar-logo'>Nicholas Licata</a>
           <nav className={navActive ? 'nav-active' : 'nav'}>
             <a className='nav-link' href='#home'>Home</a>
             <a className='nav-link' href='#about'>About</a>
