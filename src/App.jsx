@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import Navbar from './components/Navbar';
 import Home from './components/Home';
 
 function App() {
@@ -21,7 +22,8 @@ function App() {
   }
 
   return (
-    <main>
+    <main className='main'>
+      <Navbar navActive={navActive} toggleNav={toggleNav} />
       <Home navActive={navActive} toggleNav={toggleNav}/>
     </main>
   )
