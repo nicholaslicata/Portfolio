@@ -12,8 +12,6 @@ html, body {
     position: relative;
     /* overflow-x: hidden; */
     background-color: black;
-    background: url(assets/space-bg.jpg) no-repeat;
-    background-position: center;
 }
 
 html {
