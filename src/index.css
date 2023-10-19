@@ -12,6 +12,8 @@ html, body {
     position: relative;
     /* overflow-x: hidden; */
     background-color: black;
+    background: url(assets/space-bg.jpg) no-repeat;
+    background-position: center;
 }
 
 html {
@@ -23,6 +25,8 @@ html {
 .navbar-container { 
     min-height: 10vh;
     width: 100%;
+    max-width: 72em;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -74,6 +78,9 @@ html {
     font-size: 1.4rem;
     text-decoration: none;
     color: #CEA3FF;
+    padding: 0.18em;
+    border: 2px solid #CEA3FF;
+    border-radius: 50%;
 }
 
 .hamburger-btn {
@@ -103,6 +110,7 @@ html {
 
 .home-intro-container {
     width: 100%;
+    max-width: 72em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -111,6 +119,7 @@ html {
 }
 
 .home-text-container {
+    width: 100%;
     padding: 0 1.5em;
     min-height: 40%;
     margin-bottom: 3em;
@@ -139,6 +148,7 @@ html {
 }
 
 .home-intro-p {
+    max-width: 500px;
     font-size: 1rem;
     letter-spacing: 1.4px;
     line-height: 1.6em;
@@ -151,6 +161,10 @@ html {
 .home-intro-about-link {
     color: #CEA3FF;
     text-decoration: none;
+}
+
+.home-intro-about-link:hover {
+    border-bottom: 2px solid #CEA3FF;
 }
 
 .home-intro-buttons {
@@ -229,11 +243,31 @@ html {
 
     /* HOME */
     .home-intro-name {
-        font-size: 3.4rem;
+        font-size: 3.6rem;
         margin-bottom: 0;
     }
 
     .home-intro-subtext {
-        font-size: 2.4rem;
+        font-size: 3rem;
+    }
+
+    .home-intro-p {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    /* HOME */
+     .home-text-container {
+        margin-left: auto;
+        margin-right: auto;
+     }
+
+     .home-intro-name {
+        font-size: 5rem;
+    }
+
+    .home-intro-subtext {
+        font-size: 3.2rem;
     }
 }
