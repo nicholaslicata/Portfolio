@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 * {
     margin: 0;
@@ -10,10 +10,15 @@
 html, body {
     height: 100%;
     position: relative;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
+    background-color: black;
 }
 
-/* Navbar */
+html {
+    scroll-behavior: smooth;
+}
+
+/* NAVBAR */
 
 .navbar-container { 
     min-height: 10vh;
@@ -21,8 +26,7 @@ html, body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1em 1em;
-    border: 1px solid red;
+    padding: 1em 1.5em;
 }
 
 .nav {
@@ -30,6 +34,7 @@ html, body {
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
     position: absolute;
     top: 0;
@@ -51,16 +56,24 @@ html, body {
     left: 0;
     z-index: 1;
     transition: 0.4s ease-in;
-    border: 1px solid red;
+    background-color: black;
 }
 
 .nav-link {
     text-decoration: none;
     letter-spacing: 0.4px;
+    color: white;
+}
+
+.nav-link:hover {
+    color: #CEA3FF;
 }
 
 .navbar-logo {
     letter-spacing: 0.4px;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #CEA3FF;
 }
 
 .hamburger-btn {
@@ -75,19 +88,136 @@ html, body {
 .hamburger-line {
     display: block;
     width: 20px;
-    height: 3px;
-    margin: 3px auto;
-    border-radius: 0%;
-    background-color: black;
+    height: 2.5px;
+    margin: 4px auto;
+    border-radius: 5px;
+    background-color: white;
 }
 
-/* Media Queries */
+/* HOME */
+
+.home {
+    display: flex;
+    min-height: 88vh;
+}
+
+.home-intro-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1em 0;
+}
+
+.home-text-container {
+    padding: 0 1.5em;
+    min-height: 40%;
+    margin-bottom: 3em;
+}
+
+.home-intro-text {
+    font-size: 1.2rem;
+    letter-spacing: 1.4px;
+    color: #CEA3FF;
+    margin-bottom: 0.2em;
+}
+
+.home-intro-name {
+    font-size: 2.25rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: white;
+    margin-bottom: 0.2em;
+}
+
+.home-intro-subtext {
+    font-size: 1.875rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #CEA3FF;
+}
+
+.home-intro-p {
+    font-size: 1rem;
+    letter-spacing: 1.4px;
+    line-height: 1.6em;
+    overflow-wrap: break-word;
+    color: white;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.home-intro-about-link {
+    color: #CEA3FF;
+    text-decoration: none;
+}
+
+.home-intro-buttons {
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.home-intro-resume {
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 0.8em;
+    color: #CEA3FF;
+    background-color: black;
+    border: 2px solid #CEA3FF;
+    border-radius: 5px;
+    margin-right: 1em;
+}
+
+.home-intro-resume:hover {
+    cursor: pointer;
+    color: white;
+    border: 2px solid white;
+}
+
+.home-intro-icon {
+    color: white;
+    font-size: 2rem;
+    margin-right: 0.5em;
+}
+
+.home-intro-icon:hover {
+    cursor: pointer;
+}
+
+.home-img-container {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 3em;
+    border: 3px solid white;
+}
+
+.home-profile-img {
+    width: 100%;
+    height: auto;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 500px) {
+    /* HOME */
+    .home-img-container {
+        width: 250px;
+        height: 250px;
+    }
+}
 
 @media screen and (min-width: 768px) {
-    /* Navbar */
+    /* NAVBAR */
     .nav {
         width: 50%;
-        max-width: 400px;
+        max-width: 350px;
         position: static;
         flex-direction: row;
         justify-content: space-between;
@@ -97,4 +227,13 @@ html, body {
         display: none;
     }
 
+    /* HOME */
+    .home-intro-name {
+        font-size: 3.4rem;
+        margin-bottom: 0;
+    }
+
+    .home-intro-subtext {
+        font-size: 2.4rem;
+    }
 }
