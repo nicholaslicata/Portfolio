@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
+import About from'./components/About';
 
 function App() {
   const [navActive, setNavActive] = useState(false);
@@ -29,8 +30,9 @@ function App() {
 
   return (
     <main className='main'>
-      <Navbar navActive={navActive} toggleNav={toggleNav} />
+      <Navbar navActive={navActive} toggleNav={toggleNav} closeNav={closeNav} />
       <Home navActive={navActive} toggleNav={toggleNav}/>
+      <About />
     </main>
   )
 }
