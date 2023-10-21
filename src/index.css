@@ -43,7 +43,7 @@ html {
     left: -100%;
     padding: 1em 0;
     z-index: 1;
-    transition: 0.4s ease-in;
+    transition: 0.3s ease-in;
 }
 
 .nav-active {
@@ -57,7 +57,7 @@ html {
     top: 0;
     left: 0;
     z-index: 1;
-    transition: 0.4s ease-in;
+    transition: 0.3s ease-in;
     background-color: black;
 }
 
@@ -92,18 +92,47 @@ html {
 
 .hamburger-line {
     display: block;
-    width: 20px;
-    height: 2.5px;
+    position: relative;
+    width: 25px;
+    height: 3.2px;
     margin: 4px auto;
     border-radius: 5px;
     background-color: white;
+    transition: 0.2s ease-in;
+}
+
+.nav-close-line-1 {
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 3.2px;
+    margin: 4px auto;
+    border-radius: 5px;
+    background-color: white;
+    transition: 0.2s ease-in;
+    transform: rotate(45deg);
+}
+
+.nav-close-line-2 {
+    display: none;
+}
+
+.nav-close-line-3 {
+    display: block;
+    width: 25px;
+    height: 3.2px;
+    margin: 4px auto;
+    border-radius: 5px;
+    background-color: white;
+    transition: 0.3s ease-in;
+    transform: rotate(-45deg);
 }
 
 /* HOME */
 
 .home {
     display: flex;
-    min-height: 88vh;
+    min-height: 89vh;
 }
 
 .home-intro-container {
@@ -213,6 +242,17 @@ html {
 .home-profile-img {
     width: 100%;
     height: auto;
+}
+
+/* ABOUT */
+
+.about {
+    min-height: 100vh;
+    border: 1px solid red;
+}
+
+.about-p {
+    color: white;
 }
 
 /* MEDIA QUERIES */
