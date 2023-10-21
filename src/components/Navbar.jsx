@@ -11,9 +11,9 @@ function Navbar({ navActive, toggleNav, closeNav }) {
             <a onClick={closeNav} className='nav-link' href='#contact'>Contact</a>
           </nav>
           <div onClick={toggleNav} className='hamburger-btn'>
-            <span className='hamburger-line'></span>
-            <span className='hamburger-line'></span>
-            <span className='hamburger-line'></span>
+            <span className={!navActive ? 'hamburger-line' : 'nav-close-line-1'}></span>
+            <span className={!navActive ? 'hamburger-line' : 'nav-close-line-2'}></span>
+            <span className={!navActive ? 'hamburger-line' : 'nav-close-line-3'}></span>
           </div>
       </header>
     )
