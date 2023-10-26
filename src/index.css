@@ -228,42 +228,98 @@ html {
     cursor: pointer;
 }
 
-.home-img-container {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    position: relative;
-    overflow: hidden;
-    margin: 0 auto;
-    margin-bottom: 3em;
-    border: 3px solid white;
-}
-
-.home-profile-img {
-    width: 100%;
-    height: auto;
-}
-
 /* ABOUT */
 
 .about {
     min-height: 100vh;
-    border: 1px solid red;
+    padding: 5em 0;
+}
+
+.about-content-container {
+    width: 100%;
+    max-width: 72em;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-bottom: 3.5em;
+}
+
+.about-text-container {
+    width: 100%;
+    padding: 0 1.5em;
+}
+
+.about-title-container {
+    width: 100%;
+    max-width: 72em;
+    margin: 0 auto;
+    margin-bottom: 3em;
+    padding: 0 1.5em;
+}
+
+.about-title {
+    font-size: 2rem;
+    letter-spacing: 1.4px;
+    margin-bottom: 0.2em;
+    color: #CEA3FF;
 }
 
 .about-p {
+    font-size: 1rem;
+    letter-spacing: 1.4px;
+    line-height: 1.6em;
+    max-width: 550px;
     color: white;
 }
 
-/* MEDIA QUERIES */
-
-@media screen and (min-width: 500px) {
-    /* HOME */
-    .home-img-container {
-        width: 250px;
-        height: 250px;
-    }
+.about-img-container {
+    width: 100%;
+    text-align: center;
+    padding: 0 1.5em;
+    margin-bottom: 3em;
 }
+
+.about-profile-img {
+    border: 3px solid white;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+.about-skills-container {
+    width: 100%;
+    max-width: 72em;
+    display: flex;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.about-skill-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.about-skill {
+    width: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 0.5em;
+    color: white;
+    font-size: 1rem;
+}
+
+.about-skill-icon {
+    height: 40px;
+    width: 40px;
+}
+
+/* MEDIA QUERIES */
 
 @media screen and (min-width: 768px) {
     /* NAVBAR */
@@ -292,6 +348,21 @@ html {
     .home-intro-p {
         font-size: 1.1rem;
     }
+
+    /* ABOUT */
+    .about-content-container {
+        flex-direction: row;
+    }
+
+    .about-profile-img {
+        height: 250px;
+        width: 250px;
+    }
+
+    .about-skill-icon {
+        height: 50px;
+        width: 50px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -308,4 +379,5 @@ html {
     .home-intro-subtext {
         font-size: 3.2rem;
     }
+
 }
