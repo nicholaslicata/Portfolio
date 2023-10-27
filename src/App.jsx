@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from'./components/About';
+import Projects from './components/Projects';
 
 function App() {
   const [navActive, setNavActive] = useState(false);
@@ -33,6 +34,7 @@ function App() {
       <Navbar navActive={navActive} toggleNav={toggleNav} closeNav={closeNav} />
       <Home navActive={navActive} toggleNav={toggleNav}/>
       <About />
+      <Projects />
     </main>
   )
 }
