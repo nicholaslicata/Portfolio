@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from'./components/About';
 import Projects from './components/Projects';
+import Contact from './components/Contact';
 
 function App() {
   const [navActive, setNavActive] = useState(false);
@@ -35,6 +36,7 @@ function App() {
       <Home navActive={navActive} toggleNav={toggleNav}/>
       <About />
       <Projects />
+      <Contact />
     </main>
   )
 }
