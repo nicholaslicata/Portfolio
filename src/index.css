@@ -324,19 +324,17 @@ html {
 .projects {
     min-height: 100vh;
     padding: 5em 0;
-    border: 1px solid red;
 }
 
 .projects-list-container {
     width: 100%;
     max-width: 72em;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
     gap: 2em;
     margin: 0 auto;
     margin-bottom: 3.5em;
-    border: 1px solid green;
 }
 
 .projects-title-container {
@@ -356,9 +354,11 @@ html {
 
 .project-container {
     width: 90%;
-    max-width: 500px;
+    max-width: 520px;
     border-radius: 5px;
     border: 4px solid white;
+    align-self: stretch;
+    margin: 0 auto;
 }
 
 .project-img-container {
@@ -411,7 +411,8 @@ html {
 
 .project-link-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
+    gap: 0.6em;
 }
 
 .project-link {
@@ -428,6 +429,96 @@ html {
 .project-link:hover {
     cursor:pointer;
     color: white;
+    border: 2px solid white;
+}
+
+/* CONTACT */
+
+.contact {
+    min-height: 100vh;
+    padding: 5em 0;
+    border: 1px solid red;
+}
+
+.contact-title-container {
+    width: 100%;
+    max-width: 72em;
+    margin: 0 auto;
+    margin-bottom: 3em;
+    padding: 0 1.5em;
+}
+
+.contact-title {
+    font-size: 2rem;
+    letter-spacing: 1.4px;
+    margin-bottom: 0.2em;
+    color: #CEA3FF;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 72em;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 3.5em;
+    padding: 0 1.5em;
+}
+
+.contact-label {
+    color: white;
+}
+
+.contact-input {
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 2em;
+    background-color: black;
+    color: white;
+    border: none;
+    border-bottom: 3px solid white;
+}
+
+.contact-input:focus {
+    border-bottom: 3px solid #CEA3FF;
+    outline: none;
+}
+
+.contact-message {
+    display: block;
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 2em;
+    background-color: black;
+    color: white;
+    border: none;
+    border-bottom: 3px solid white;
+    resize: none;
+}
+
+.contact-message:focus {
+    border-bottom: 3px solid #CEA3FF;
+    outline: none;
+}
+
+.contact-btn {
+    width: 50%;
+    max-width: 250px;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 0.8em;
+    margin-top: 2em;
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.contact-btn:hover {
+    color: #CEA3FF;
+    border: 2px solid #CEA3FF;
+    cursor: pointer;
 }
 
 /* MEDIA QUERIES */
@@ -493,6 +584,13 @@ html {
 
     .home-intro-subtext {
         font-size: 3.2rem;
+    }
+
+    /* PROJECTS */
+    .projects-list-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
 }
