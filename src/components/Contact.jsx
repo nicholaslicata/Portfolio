@@ -6,6 +6,7 @@ function Contact() {
                 <h4 className='contact-title'>Contact Me</h4>
             </div>
             <form className='contact-form' name='contact-form' method='POST' data-netlify='true'>
+                <input type='hidden' name='form-name' value='contact-form'></input>
                 <label type='text' htmlFor='name' className='contact-label'>Name</label>
                 <input id='name' name='name' className='contact-input' autoComplete="off"></input>
                 <label type='email' htmlFor='email' className='contact-label'>Email</label>
