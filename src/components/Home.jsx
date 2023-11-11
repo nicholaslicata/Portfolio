@@ -14,8 +14,8 @@ function Home() {
                 </p>
                 <div className='home-intro-buttons'>
                 <button className='home-intro-resume'>View Resume</button>
-                <a href='https://github.com/nicholaslicata' target='_blank'><FaGithub className='home-intro-icon' /></a>
-                <a href='https://linkedin.com/in/nicholaslicata' target='_blank'><FaLinkedin className='home-intro-icon' /></a>
+                <a href='https://github.com/nicholaslicata' target='_blank' aria-label="Visit my Github"><FaGithub className='home-intro-icon' /></a>
+                <a href='https://linkedin.com/in/nicholaslicata' target='_blank' aria-label="Visit my LinkedIn"><FaLinkedin className='home-intro-icon' /></a>
               </div>
               </div>
             </div>
