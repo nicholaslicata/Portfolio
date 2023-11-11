@@ -29,6 +29,7 @@ html {
     justify-content: space-between;
     align-items: center;
     padding: 1em 1.5em;
+    border-bottom: 1px solid white;
 }
 
 .nav {
@@ -435,9 +436,8 @@ html {
 /* CONTACT */
 
 .contact {
-    min-height: 100vh;
+    min-height: 90vh;
     padding: 5em 0;
-    border: 1px solid red;
 }
 
 .contact-title-container {
@@ -509,19 +509,65 @@ html {
     letter-spacing: 1px;
     padding: 0.8em;
     margin-top: 2em;
-    color: white;
+    color: #CEA3FF;
     background-color: black;
-    border: 2px solid white;
+    border: 2px solid #CEA3FF;
     border-radius: 5px;
 }
 
 .contact-btn:hover {
-    color: #CEA3FF;
-    border: 2px solid #CEA3FF;
+    color: white;
+    border: 2px solid white;
     cursor: pointer;
 }
 
+/* FOOTER */
+
+.footer {
+    min-height: 10vh;
+    width: 100%;
+    max-width: 72em;
+    display: flex;
+    margin: 0 auto;
+    border-top: 1px solid white;
+}
+
+.footer-content-container {
+    width: 100%;
+    max-width: 72em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    margin: 0 auto;
+    padding: 1em 1.5em;
+}
+
+.footer-email {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-icons-container {
+    display: flex;
+    gap: 1em;
+}
+
+.footer-icon {
+    color: white;
+    font-size: 1.2rem;
+}
+
 /* MEDIA QUERIES */
+
+@media screen and (min-width: 500px) {
+    /* FOOTER */
+    .footer-content-container {
+        flex-direction: row;
+        align-items: center;
+    }
+}
 
 @media screen and (min-width: 768px) {
     /* NAVBAR */
