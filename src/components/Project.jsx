@@ -12,8 +12,8 @@ function Project({ projectItem }) {
             <div className='project-text-container'>
                 <p className='project-title'>{projectItem.title}</p>
                 <ul className='project-tech-list'>
-                  {projectTech.map((techItem) => (
-                      <li className='project-tech-item'>{techItem}</li>
+                  {projectTech.map((techItem, index) => (
+                      <li className='project-tech-item' key={index}>{techItem}</li>
                   ))}
                 </ul>
                 <p className='project-description'>{projectItem.description}</p>
