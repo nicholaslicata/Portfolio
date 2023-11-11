@@ -9,8 +9,8 @@ function Projects() {
                 <h3 className='projects-title'>Projects</h3>
             </div>
             <div className='projects-list-container'>
-            {projectList.map((projectItem) => (
-                    <Project projectItem={projectItem} />
+            {projectList.map((projectItem, index) => (
+                    <Project projectItem={projectItem} key={index} />
             ))}
             </div>
         </section>
