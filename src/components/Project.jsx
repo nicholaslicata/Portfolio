@@ -7,7 +7,7 @@ function Project({ projectItem }) {
     return (
         <div className='project-container'>
             <div className='project-img-container'>
-                <img className='project-img' src={projectItem.img}></img>
+                <img className='project-img' src={projectItem.img} alt={'Image of ' + projectItem.title}></img>
             </div>
             <div className='project-text-container'>
                 <p className='project-title'>{projectItem.title}</p>
