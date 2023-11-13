@@ -1,4 +1,5 @@
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import Resume from '../assets/Resume.pdf';
 
 function Home() {
 
@@ -13,7 +14,7 @@ function Home() {
                     and effective web experiences. Here's a little bit more <a className='home-intro-about-link' href='#about'>about me..</a>
                 </p>
                 <div className='home-intro-buttons'>
-                <button className='home-intro-resume'>View Resume</button>
+                <button className='home-intro-resume' onClick={() => {window.open(Resume)}}>View Resume</button>
                 <a href='https://github.com/nicholaslicata' target='_blank' aria-label="Visit my Github"><FaGithub className='home-intro-icon' /></a>
                 <a href='https://linkedin.com/in/nicholaslicata' target='_blank' aria-label="Visit my LinkedIn"><FaLinkedin className='home-intro-icon' /></a>
               </div>
