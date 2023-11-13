@@ -16,7 +16,7 @@ import JourneyJotterImg from './assets/journey-jotter.png';
     {
         title: 'TV For Me',
         tech: ['React', 'CSS', 'TV Maze API'],
-        description: 'This project allows users to find information about TV shows or their favorite actor/actress. They also have access to a watchlist to keep track of their favorite shows.',
+        description: 'This project allows users to find information about TV shows or their favorite actor/actress. They also have access to a watchlist for their favorite shows.',
         demoLink: 'https://nicholaslicata.github.io/TV-For-Me/',
         githubLink: 'https://github.com/nicholaslicata/TV-For-Me',
         img: TVForMeImg
