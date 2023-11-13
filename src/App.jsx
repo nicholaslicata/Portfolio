@@ -18,8 +18,10 @@ function App() {
 
     if (navActive && window.innerWidth < 768) {
       document.body.style.overflowY = 'hidden';
+      document.body.style.position = 'fixed';
     } else if (!navActive) {
       document.body.style.overflowY = 'visible';
+      document.body.style.position = 'relative';
     }
   })
 
