@@ -1,5 +1,5 @@
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import Resume from '../assets/Resume.pdf';
+import Resume from '../assets/Nicholas Licata Resume.pdf';
 
 function Home() {
 
