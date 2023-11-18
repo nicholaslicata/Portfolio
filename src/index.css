@@ -28,7 +28,6 @@ html {
     justify-content: space-between;
     align-items: center;
     padding: 1em 1.5em;
-    border-bottom: 1px solid white;
 }
 
 .nav {
@@ -231,8 +230,16 @@ html {
 /* ABOUT */
 
 .about {
-    min-height: 100vh;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 5em 0;
+}
+
+.about-container {
+    width: 100%;
+    max-width: 72em;
 }
 
 .about-content-container {
@@ -435,8 +442,16 @@ html {
 /* CONTACT */
 
 .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-height: 90vh;
     padding: 5em 0;
+}
+
+.contact-container {
+    width: 100%;
+    max-width: 72em;
 }
 
 .contact-title-container {
@@ -637,5 +652,4 @@ html {
         flex-wrap: wrap;
         justify-content: space-between;
     }
-
 }
