@@ -2,6 +2,7 @@
 function Contact() {
     return (
         <section className='contact' id='contact'>
+            <div className='contact-container'>
             <div className='contact-title-container'>
                 <h4 className='contact-title'>Contact Me</h4>
             </div>
@@ -15,6 +16,7 @@ function Contact() {
                 <textarea id='message' name='message' className='contact-message'></textarea>
                 <button type='submit' className='contact-btn'>Send</button>
             </form>
+            </div>
         </section>
     )
 }
