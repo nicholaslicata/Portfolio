@@ -10,6 +10,7 @@ import GitImg from '../assets/Git1.svg';
 function About() {
     return (
         <section className='about' id='about'>
+            <div className='about-container'>
             <div className='about-title-container'>
                <h2 className='about-title'>About Me</h2>
             </div>
@@ -59,6 +60,7 @@ function About() {
                         <img className='about-skill-icon' alt='Skill Icon' src={GitImg} ></img>
                     </li>
                 </ul>
+                </div>
             </div>
         </section>
     )
