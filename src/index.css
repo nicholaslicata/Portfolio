@@ -11,10 +11,30 @@ html, body {
     height: 100%;
     position: relative;
     background-color: black;
+    scrollbar-color: #CEA3FF;
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 0.75em;
+}
+
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #CEA3FF;
+}
+
+@supports (scrollbar-color: #CEA3FF white) {
+    * {
+        scrollbar-color: #CEA3FF white;
+        scrollbar-width: auto;
+    }
 }
 
 /* NAVBAR */
