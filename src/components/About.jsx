@@ -2,6 +2,7 @@ import ProfileImg from '../assets/me.jpg';
 import HTMLImg from '../assets/HTML1.svg';
 import CSSImg from '../assets/CSS1.svg';
 import JSImg from '../assets/JS1.svg';
+import TSImg from '../assets/TS1.svg';
 import ReactImg from '../assets/React1.svg';
 import TWImg from '../assets/TW1.svg';
 import FBImg from '../assets/FB1.svg';
@@ -32,7 +33,7 @@ function About() {
             <div className='about-skills-container'>
                 <ul className='about-skill-list'>
                     <li className='about-skill'>
-                        HTML
+                       HTML
                        <img className='about-skill-icon' alt='Skill Icon' src={HTMLImg}></img>
                     </li>
                     <li className='about-skill'>
@@ -42,6 +43,10 @@ function About() {
                     <li className='about-skill'>
                         Javascript
                         <img className='about-skill-icon' alt='Skill Icon' src={JSImg} ></img>
+                    </li>
+                       <li className='about-skill'>
+                        Typescript
+                        <img className='about-skill-icon' alt='Skill Icon' src={TSImg} ></img>
                     </li>
                     <li className='about-skill'>
                         React
@@ -57,7 +62,7 @@ function About() {
                     </li>
                     <li className='about-skill'>
                         Git
-                        <img className='about-skill-icon' alt='Skill Icon' src={GitImg} ></img>
+                        <img className='about-skill-icon' alt='Skill Icon' src={GitImg} height='20px'></img>
                     </li>
                 </ul>
                 </div>
