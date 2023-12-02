@@ -326,16 +326,16 @@ html {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5em;
     justify-content: space-between;
+    gap: 1.5em;
     list-style: none;
 }
 
 .about-skill {
-    width: 125px;
+    min-width: 100px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     gap: 0.5em;
     color: white;
     font-size: 1rem;
