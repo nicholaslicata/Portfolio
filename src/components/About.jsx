@@ -4,6 +4,7 @@ import CSSImg from '../assets/CSS1.svg';
 import JSImg from '../assets/JS1.svg';
 import TSImg from '../assets/TS1.svg';
 import ReactImg from '../assets/React1.svg';
+import SassImg from '../assets/Sass.svg';
 import TWImg from '../assets/TW1.svg';
 import FBImg from '../assets/FB1.svg';
 import GitImg from '../assets/Git1.svg';
@@ -53,6 +54,10 @@ function About() {
                         <img className='about-skill-icon' alt='Skill Icon' src={ReactImg} ></img>
                     </li>
                     <li className='about-skill'>
+                        Sass
+                        <img className='about-skill-icon' alt='Skill Icon' src={SassImg}></img>
+                    </li>
+                    <li className='about-skill'>
                         Tailwind
                         <img className='about-skill-icon' alt='Skill Icon' src={TWImg} ></img>
                     </li>
@@ -62,7 +67,7 @@ function About() {
                     </li>
                     <li className='about-skill'>
                         Git
-                        <img className='about-skill-icon' alt='Skill Icon' src={GitImg} height='20px'></img>
+                        <img className='about-skill-icon' alt='Skill Icon' src={GitImg} ></img>
                     </li>
                 </ul>
                 </div>
