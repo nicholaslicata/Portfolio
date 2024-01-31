@@ -45,10 +45,6 @@ function About() {
                         Javascript
                         <img className='about-skill-icon' alt='Skill Icon' src={JSImg} ></img>
                     </li>
-                       <li className='about-skill'>
-                        Typescript
-                        <img className='about-skill-icon' alt='Skill Icon' src={TSImg} ></img>
-                    </li>
                     <li className='about-skill'>
                         React
                         <img className='about-skill-icon' alt='Skill Icon' src={ReactImg} ></img>
